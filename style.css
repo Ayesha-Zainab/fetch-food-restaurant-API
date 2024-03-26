@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+
+}
+
+header nav h1 {
+    margin-left: 5%;
+    font-size: 26px;
+    color: white;
+    text-transform: uppercase;
+}
+
+header>nav>form {
+    display: flex;
+}
+
+header>nav>form>input {
+    margin-right: 20px;
+    font-size: 30px;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+input::placeholder {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+header>nav>form>button {
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.913);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.recipe-container {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.recipeDiv {
+    background-color: black;
+    color: white;
+    transition-duration: 0.4s;
+
+
+}
+
+.recipeDiv>p {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.recipeDiv>h3 {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.recipeDiv img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.recipeDiv:hover {
+    transform: scale(1.03);
+
+}
+
+.recipeDiv button {
+    background-color: black;
+    color: red;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid gray;
+    margin-top: 10px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.recipe-detail {
+    width: 40%;
+    height: 60%;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+}
+
+.meal {
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.instructions>.instruc {
+    margin-left: -20px;
+}
+.instructions {
+    margin-top: 10px;
+    font-size: 16px;
+    padding-left: 20px;
+    line-height: 22px;
+}
+.ingredients {
+    padding-left: 20px;
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.closebutton {
+    margin-left: 80%;
+    padding: 3px;
+    position: relative;
+    top: 6%;
+    color: white;
+    background-color: red;
+    border: none;
+}
+@media screen and (max-width: 640px){
+    .closebutton{
+        margin-left: 90%;
+    }
+}
